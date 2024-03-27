@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+float: none;
+width: auto;
+}
+
+#menulist {
+margin: 5;
+padding: 0;
+}
+
+.menuitem {
+background: #CDF0F6;
+border: 2px solid #d4d4d4;
+border-radius: 4px;
+list-style-type: none;
+margin: 5px;
+padding: 2px;
+}
+* {
+box-sizing: border-box;
+}
+
+.img-container {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.img1 { 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+@media screen and (min-width: 480px) {
+#leftsidebar {width: 200px; float: left;}
+#main {margin-left: 216px;}
+}
+    body {
+        background-image: url('back.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .flex-container {
+    display: flex;
+    background-color: rgb(11, 6, 69);   
+    }
+
+    .flex-container > div {
+    background-color: #69afff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    }
+
+    p.a {
+        font: 20px Arial, sans-serif;
+    }
+
+    p.b {
+        font: italic bold 12px/30px Georgia, serif;
+    }
+
+    p.capitalize {
+    text-transform: capitalize;
+    }
+
+    p.small {
+    font-variant: small-caps;
+    }
+
+
+    * {
+    box-sizing: border-box;
+    }
+    body {
+    background-color: white;
+    }
+
+    .menu {
+    width: 25%;
+    }
+
+    .content {
+    width: 75%;
+    }
+
+    .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #e57733;
+    color: #ffffff;
+    }
+
+    .menu li:hover {
+    background-color: #3dacd1;
+    }
+
+    a.ex1 {
+    text-decoration: none;
+    }
+
+    img.ex1 {
+    -webkit-box-reflect: right;
+    }
+
+    div.gallery {
+    border: 1px solid #e88888;
+    }
+
+    div.gallery:hover {
+    border: 1px solid #62acec;
+    }
+
+    div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+    .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 200px) {
+    .responsive {
+    width: 40%;
+    margin: 6px 0;
+    }
+}
+
+    @media only screen and (max-width: 200px) {
+    .responsive {
+    width: 50%;
+    }
+}
+
+    .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container1 {
+    position: relative;
+    width: 50%;
+}
+
+.image1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container1:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+}
+
+.text1 {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.box2 {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+.clearfix2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+</style>
+</head>
+    <div class="flex-container">
+        <div>Поділитись</div>
+        <div>Лайк</div>
+        <div>Питання</div>  
+        <div>Відгук</div>  
+        <div>Галерея</div> 
+        <div>Здати роботу</div> 
+        <div>Повернути звіт</div> 
+        <div>Вийти</div> 
+    </div><br></br>
+    <h1>Самостійна робота №3. З котиками</h1>
+
+    <img class="ex1" src="cat.png" width="300" height="400"><br></br><br></br>
+    <div class="clearfix2">
+        <div class="box2" style="background-color:#4653c6">
+        <p>Blue-blue</p>
+        </div>
+        <div class="box2" style="background-color:#6195de">
+        <p>Blue</p>
+        </div>
+        <div class="box2" style="background-color:#70bbe4">
+        <p>Light blue</p>
+        </div>
+    </div><br></br>
+    <div class="container1">
+        <img src="view.png" alt="Avatar" class="image1">
+        <div class="overlay1">
+        <div class="text1">Meow</div>
+        </div>
+    </div>
+    <br></br>
+    <div class="clearfix">
+        <div class="img-container">
+        <img src="na1.avif" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="na2.avif" alt="Forest" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="na3.avif" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+
+    <br></br>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="one.jpg">
+            <img src="cat1.jpg" width="600" height="400">
+            </a>
+        <div class="desc">Just little kitty</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="two.jpg">
+            <img src="cat2.jpg" width="600" height="400">
+            </a>
+        <div class="desc">Shocked!</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="five.jpg">
+            <img src="cat3.jpg" width="600" height="400">
+            </a>
+        <div class="desc">Sad bby</div>
+    </div>
+
+    </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="six.jpg">
+                <img src="cat4.jpg" alt="Mountains" width="600" height="400">
+                </a>
+            <div class="desc">Sleepy eepy cats</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+        <div style="padding:6px;">
+    </div>
+    <div class="wrapper">
+        <div id="leftsidebar">
+            <ul id="menulist">
+            <li class="menuitem">I try to keep you sheltered from it, but somehow it seems</li>
+            <li class="menuitem">The harder that I try to do that, the more it backfires on me</li>
+            <li class="menuitem">Together ever again, like we used to be when we was teenagers</li>
+            <li class="menuitem">But it's just somethin' we have no control over, and that's what destiny is</li>
+            <li class="menuitem">Maybe one day we'll wake up and this'll all just be a dream</li>
+            </ul>
+        </div>
+        
+        <div id="main">
+        <h1>There are some icons and some flex menu items</h1>
+        <img class="img1"src="light.png" width="600" height="900">
+        <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-book"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-cloud"></i>
+</body>
+</html>
